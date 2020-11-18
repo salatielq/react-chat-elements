@@ -1,9 +1,5 @@
-import ChatItem from './ChatItem/ChatItem';
-import MessageBox from './MessageBox/MessageBox';
-import MessageList from './MessageList/MessageList';
+import {AppRegistry} from 'react-native';
+import App from './App';
+import {name as appName} from './app.json';
 
-export {
-    ChatItem,
-    MessageBox,
-    MessageList,
-};
+AppRegistry.registerComponent(appName, () => App);

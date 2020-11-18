@@ -57,7 +57,8 @@
   "homepage": "https://github.com/detaysoft/react-chat-elements#readme",
   "scripts": {
     "start": "nwb serve-react-app ./example/index.js",
-    "start:native": "node node_modules/react-native/local-cli/cli.js start",
+    "start:android": "cd native && npx react-native run-android",
+    "start:ios": "cd native && npx react-native run-ios",
     "build": "webpack --progress --profile --colors",
     "test": "react-scripts test --env=jsdom",
     "test:coverage": "npm run test -- --coverage --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/index.js"
